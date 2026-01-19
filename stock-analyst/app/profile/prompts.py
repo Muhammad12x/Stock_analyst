@@ -31,7 +31,7 @@ Rules:
 - Provide 3-8 risks with severity.
 
 Report:
-"""
+\"\"\"
 {report_markdown}
-"""
+\"\"\"
 """.strip()
