@@ -2,7 +2,7 @@ from __future__ import annotations
 
 
 def build_profile_prompt(ticker: str, report_markdown: str) -> str:
-    return f"""
+    return f'''
 You are an analyst extracting structured data from a markdown stock report.
 Return ONLY valid JSON for the schema below with no extra commentary.
 
@@ -31,5 +31,7 @@ Rules:
 - Provide 3-8 risks with severity.
 
 Report:
+\"\"\"
 {report_markdown}
+\"\"\"
 """.strip()
